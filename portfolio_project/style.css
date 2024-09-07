@@ -65,8 +65,6 @@ li{
 }
 
 nav {
-    position: sticky;
-    top: 0;
     display: flex;
     justify-content: space-around;
     border-radius: 20px;
@@ -202,15 +200,16 @@ footer > p{
 }
 
 .promotional-img:hover {
-    animation: myanimation 2s ;
+    animation: myanimation 0.3s reverse infinite;
+    
 }
 
 @keyframes myanimation {
     from {
-        transform: scale(1);
+        transform: translateX(-2px);
     }
 
     to {
-        transform: scale(1.7);
+        transform: translateX(2px);
     }
 }
